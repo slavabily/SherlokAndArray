@@ -7,5 +7,10 @@
 
 import Foundation
 
-print("Hello, World!")
+func balancedSums(arr: [Int]) -> String {
+      
+    return "YES"
+}
+
+print(balancedSums(arr: [1,2,3,3]))
 
