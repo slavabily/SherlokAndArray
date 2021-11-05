@@ -8,6 +8,17 @@
 import Foundation
 
 func balancedSums(arr: [Int]) -> String {
+    for i in 1..<arr.count - 1 {
+        var leftSum = 0
+        for j in 0..<i {
+            leftSum = leftSum + arr[j]
+        }
+        var rightSum = 0
+        for h in i + 1..<arr.count {
+            rightSum = rightSum + arr[h]
+        }
+        print("\(leftSum)   \(rightSum)")
+    }
       
     return "YES"
 }
