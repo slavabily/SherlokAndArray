@@ -18,10 +18,12 @@ func balancedSums(arr: [Int]) -> String {
             rightSum = rightSum + arr[h]
         }
         print("\(leftSum)   \(rightSum)")
+        if leftSum == rightSum {
+            return "YES"
+        }
     }
-      
-    return "YES"
+    return "NO"
 }
 
-print(balancedSums(arr: [1,2,3,3]))
+print(balancedSums(arr: [2,0,0,0]))
 
