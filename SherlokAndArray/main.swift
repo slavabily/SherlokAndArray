@@ -8,7 +8,7 @@
 import Foundation
 
 func balancedSums(arr: [Int]) -> String {
-    for i in 1..<arr.count - 1 {
+    for i in 0..<arr.count {
         var leftSum = 0
         for j in 0..<i {
             leftSum = leftSum + arr[j]
